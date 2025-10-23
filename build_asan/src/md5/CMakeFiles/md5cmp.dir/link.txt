@@ -1,0 +1,1 @@
+/usr/bin/cc -fsanitize=address -fno-omit-frame-pointer -g -O1 -g -fsanitize=address -Xlinker --dependency-file=CMakeFiles/md5cmp.dir/link.d CMakeFiles/md5cmp.dir/md5cmp.c.o CMakeFiles/md5cmp.dir/md5.c.o CMakeFiles/md5cmp.dir/md5hl.c.o -o ../../test/md5cmp

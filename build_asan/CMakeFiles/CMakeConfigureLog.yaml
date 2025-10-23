@@ -1,0 +1,1195 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      The system is: Linux - 6.1.147 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/cc 
+      Build flags: -fsanitize=address;-fno-omit-frame-pointer;-g;-O1
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is Clang, found in:
+        /workspace/build_asan/CMakeFiles/3.31.6/CompilerIdC/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:16 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-gIk61f"
+      binary: "/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-gIk61f"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-fsanitize=address -fno-omit-frame-pointer -g -O1"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-fsanitize=address"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-gIk61f'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_2bf5f/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_2bf5f.dir/build.make CMakeFiles/cmTC_2bf5f.dir/build
+        gmake[1]: Entering directory '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-gIk61f'
+        Building C object CMakeFiles/cmTC_2bf5f.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -fsanitize=address -fno-omit-frame-pointer -g -O1    -v -MD -MT CMakeFiles/cmTC_2bf5f.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_2bf5f.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_2bf5f.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c
+        Ubuntu clang version 20.1.2 (0ubuntu1)
+        Target: x86_64-pc-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/lib/llvm-20/bin
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14
+        Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         (in-process)
+         "/usr/lib/llvm-20/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debug-info-kind=constructor -dwarf-version=5 -debugger-tuning=gdb -fdebug-compilation-dir=/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-gIk61f -v -fcoverage-compilation-dir=/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-gIk61f -resource-dir /usr/lib/llvm-20/lib/clang/20 -dependency-file CMakeFiles/cmTC_2bf5f.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_2bf5f.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /usr/lib/llvm-20/lib/clang/20/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/14/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -O1 -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fsanitize=address -fsanitize-system-ignorelist=/usr/lib/llvm-20/lib/clang/20/share/asan_ignorelist.txt -fno-sanitize-memory-param-retval -fsanitize-address-use-after-scope -fsanitize-address-globals-dead-stripping -fno-assume-sane-operator-new -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_2bf5f.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c
+        clang -cc1 version 20.1.2 based upon LLVM 20.1.2 default target x86_64-pc-linux-gnu
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/14/../../../../x86_64-linux-gnu/include"
+        ignoring nonexistent directory "/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/llvm-20/lib/clang/20/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Linking C executable cmTC_2bf5f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2bf5f.dir/link.txt --verbose=1
+        Ubuntu clang version 20.1.2 (0ubuntu1)
+        Target: x86_64-pc-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/lib/llvm-20/bin
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14
+        Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_2bf5f /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/14 -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/lib -L/usr/lib --whole-archive /usr/lib/llvm-20/lib/clang/20/lib/linux/libclang_rt.asan_static-x86_64.a --no-whole-archive --whole-archive /usr/lib/llvm-20/lib/clang/20/lib/linux/libclang_rt.asan-x86_64.a --no-whole-archive --dynamic-list=/usr/lib/llvm-20/lib/clang/20/lib/linux/libclang_rt.asan-x86_64.a.syms -v CMakeFiles/cmTC_2bf5f.dir/CMakeCCompilerABI.c.o --no-as-needed -lpthread -lrt -lm -ldl -lresolv -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+        GNU ld (GNU Binutils for Ubuntu) 2.44
+        /usr/bin/cc -fsanitize=address -fno-omit-frame-pointer -g -O1  -fsanitize=address -v -Wl,-v CMakeFiles/cmTC_2bf5f.dir/CMakeCCompilerABI.c.o -o cmTC_2bf5f
+        gmake[1]: Leaving directory '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-gIk61f'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/llvm-20/lib/clang/20/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/llvm-20/lib/clang/20/include] ==> [/usr/lib/llvm-20/lib/clang/20/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/llvm-20/lib/clang/20/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-gIk61f']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_2bf5f/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_2bf5f.dir/build.make CMakeFiles/cmTC_2bf5f.dir/build]
+        ignore line: [gmake[1]: Entering directory '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-gIk61f']
+        ignore line: [Building C object CMakeFiles/cmTC_2bf5f.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -fsanitize=address -fno-omit-frame-pointer -g -O1    -v -MD -MT CMakeFiles/cmTC_2bf5f.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_2bf5f.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_2bf5f.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c]
+        ignore line: [Ubuntu clang version 20.1.2 (0ubuntu1)]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/lib/llvm-20/bin]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14]
+        ignore line: [Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [ (in-process)]
+        ignore line: [ "/usr/lib/llvm-20/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debug-info-kind=constructor -dwarf-version=5 -debugger-tuning=gdb -fdebug-compilation-dir=/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-gIk61f -v -fcoverage-compilation-dir=/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-gIk61f -resource-dir /usr/lib/llvm-20/lib/clang/20 -dependency-file CMakeFiles/cmTC_2bf5f.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_2bf5f.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /usr/lib/llvm-20/lib/clang/20/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/14/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -O1 -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fsanitize=address -fsanitize-system-ignorelist=/usr/lib/llvm-20/lib/clang/20/share/asan_ignorelist.txt -fno-sanitize-memory-param-retval -fsanitize-address-use-after-scope -fsanitize-address-globals-dead-stripping -fno-assume-sane-operator-new -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_2bf5f.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang -cc1 version 20.1.2 based upon LLVM 20.1.2 default target x86_64-pc-linux-gnu]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/14/../../../../x86_64-linux-gnu/include"]
+        ignore line: [ignoring nonexistent directory "/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/llvm-20/lib/clang/20/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Linking C executable cmTC_2bf5f]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2bf5f.dir/link.txt --verbose=1]
+        ignore line: [Ubuntu clang version 20.1.2 (0ubuntu1)]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/lib/llvm-20/bin]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14]
+        ignore line: [Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        link line: [ "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_2bf5f /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/14 -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/lib -L/usr/lib --whole-archive /usr/lib/llvm-20/lib/clang/20/lib/linux/libclang_rt.asan_static-x86_64.a --no-whole-archive --whole-archive /usr/lib/llvm-20/lib/clang/20/lib/linux/libclang_rt.asan-x86_64.a --no-whole-archive --dynamic-list=/usr/lib/llvm-20/lib/clang/20/lib/linux/libclang_rt.asan-x86_64.a.syms -v CMakeFiles/cmTC_2bf5f.dir/CMakeCCompilerABI.c.o --no-as-needed -lpthread -lrt -lm -ldl -lresolv -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o /lib/x86_64-linux-gnu/crtn.o]
+          arg [/usr/bin/ld] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_2bf5f] ==> ignore
+          arg [/lib/x86_64-linux-gnu/Scrt1.o] ==> obj [/lib/x86_64-linux-gnu/Scrt1.o]
+          arg [/lib/x86_64-linux-gnu/crti.o] ==> obj [/lib/x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/14] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/14]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib64]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [--whole-archive] ==> ignore
+          arg [/usr/lib/llvm-20/lib/clang/20/lib/linux/libclang_rt.asan_static-x86_64.a] ==> lib [/usr/lib/llvm-20/lib/clang/20/lib/linux/libclang_rt.asan_static-x86_64.a]
+          arg [--no-whole-archive] ==> ignore
+          arg [--whole-archive] ==> ignore
+          arg [/usr/lib/llvm-20/lib/clang/20/lib/linux/libclang_rt.asan-x86_64.a] ==> lib [/usr/lib/llvm-20/lib/clang/20/lib/linux/libclang_rt.asan-x86_64.a]
+          arg [--no-whole-archive] ==> ignore
+          arg [--dynamic-list=/usr/lib/llvm-20/lib/clang/20/lib/linux/libclang_rt.asan-x86_64.a.syms] ==> ignore
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_2bf5f.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [--no-as-needed] ==> ignore
+          arg [-lpthread] ==> lib [pthread]
+          arg [-lrt] ==> lib [rt]
+          arg [-lm] ==> lib [m]
+          arg [-ldl] ==> lib [dl]
+          arg [-lresolv] ==> lib [resolv]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o]
+          arg [/lib/x86_64-linux-gnu/crtn.o] ==> obj [/lib/x86_64-linux-gnu/crtn.o]
+        linker tool for 'C': /usr/bin/ld
+        remove lib [/usr/lib/llvm-20/lib/clang/20/lib/linux/libclang_rt.asan_static-x86_64.a]
+        remove lib [/usr/lib/llvm-20/lib/clang/20/lib/linux/libclang_rt.asan-x86_64.a]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/14] ==> [/usr/lib/gcc/x86_64-linux-gnu/14]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [pthread;rt;m;dl;resolv;gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/lib/x86_64-linux-gnu/Scrt1.o;/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o;/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/14;/usr/lib64;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/lib;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Running the C compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils for Ubuntu) 2.44
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckTypeSize.cmake:262 (check_include_file)"
+      - "CMakeLists.txt:490 (check_type_size)"
+    checks:
+      - "Looking for sys/types.h"
+    directories:
+      source: "/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-hsjWY8"
+      binary: "/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-hsjWY8"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-fsanitize=address -fno-omit-frame-pointer -g -O1"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-fsanitize=address"
+    buildResult:
+      variable: "HAVE_SYS_TYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-hsjWY8'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_bf96f/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_bf96f.dir/build.make CMakeFiles/cmTC_bf96f.dir/build
+        gmake[1]: Entering directory '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-hsjWY8'
+        Building C object CMakeFiles/cmTC_bf96f.dir/CheckIncludeFile.c.o
+        /usr/bin/cc   -fsanitize=address -fno-omit-frame-pointer -g -O1  -MD -MT CMakeFiles/cmTC_bf96f.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_bf96f.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_bf96f.dir/CheckIncludeFile.c.o -c /workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-hsjWY8/CheckIncludeFile.c
+        Linking C executable cmTC_bf96f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bf96f.dir/link.txt --verbose=1
+        /usr/bin/cc -fsanitize=address -fno-omit-frame-pointer -g -O1  -fsanitize=address  CMakeFiles/cmTC_bf96f.dir/CheckIncludeFile.c.o -o cmTC_bf96f
+        gmake[1]: Leaving directory '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-hsjWY8'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckTypeSize.cmake:263 (check_include_file)"
+      - "CMakeLists.txt:490 (check_type_size)"
+    checks:
+      - "Looking for stdint.h"
+    directories:
+      source: "/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-0g9w5n"
+      binary: "/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-0g9w5n"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-fsanitize=address -fno-omit-frame-pointer -g -O1"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-fsanitize=address"
+    buildResult:
+      variable: "HAVE_STDINT_H"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-0g9w5n'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_84f20/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_84f20.dir/build.make CMakeFiles/cmTC_84f20.dir/build
+        gmake[1]: Entering directory '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-0g9w5n'
+        Building C object CMakeFiles/cmTC_84f20.dir/CheckIncludeFile.c.o
+        /usr/bin/cc   -fsanitize=address -fno-omit-frame-pointer -g -O1  -MD -MT CMakeFiles/cmTC_84f20.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_84f20.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_84f20.dir/CheckIncludeFile.c.o -c /workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-0g9w5n/CheckIncludeFile.c
+        Linking C executable cmTC_84f20
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_84f20.dir/link.txt --verbose=1
+        /usr/bin/cc -fsanitize=address -fno-omit-frame-pointer -g -O1  -fsanitize=address  CMakeFiles/cmTC_84f20.dir/CheckIncludeFile.c.o -o cmTC_84f20
+        gmake[1]: Leaving directory '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-0g9w5n'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckTypeSize.cmake:264 (check_include_file)"
+      - "CMakeLists.txt:490 (check_type_size)"
+    checks:
+      - "Looking for stddef.h"
+    directories:
+      source: "/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-ttCMx3"
+      binary: "/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-ttCMx3"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-fsanitize=address -fno-omit-frame-pointer -g -O1"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-fsanitize=address"
+    buildResult:
+      variable: "HAVE_STDDEF_H"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-ttCMx3'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0bd32/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_0bd32.dir/build.make CMakeFiles/cmTC_0bd32.dir/build
+        gmake[1]: Entering directory '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-ttCMx3'
+        Building C object CMakeFiles/cmTC_0bd32.dir/CheckIncludeFile.c.o
+        /usr/bin/cc   -fsanitize=address -fno-omit-frame-pointer -g -O1  -MD -MT CMakeFiles/cmTC_0bd32.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_0bd32.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_0bd32.dir/CheckIncludeFile.c.o -c /workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-ttCMx3/CheckIncludeFile.c
+        Linking C executable cmTC_0bd32
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0bd32.dir/link.txt --verbose=1
+        /usr/bin/cc -fsanitize=address -fno-omit-frame-pointer -g -O1  -fsanitize=address  CMakeFiles/cmTC_0bd32.dir/CheckIncludeFile.c.o -o cmTC_0bd32
+        gmake[1]: Leaving directory '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-ttCMx3'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckTypeSize.cmake:156 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckTypeSize.cmake:283 (__check_type_size_impl)"
+      - "CMakeLists.txt:490 (check_type_size)"
+    checks:
+      - "Check size of size_t"
+    directories:
+      source: "/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-lFmCIN"
+      binary: "/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-lFmCIN"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-fsanitize=address -fno-omit-frame-pointer -g -O1"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-fsanitize=address"
+    buildResult:
+      variable: "HAVE_SIZE_T"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-lFmCIN'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9f5f8/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_9f5f8.dir/build.make CMakeFiles/cmTC_9f5f8.dir/build
+        gmake[1]: Entering directory '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-lFmCIN'
+        Building C object CMakeFiles/cmTC_9f5f8.dir/SIZE_T.c.o
+        /usr/bin/cc   -fsanitize=address -fno-omit-frame-pointer -g -O1  -MD -MT CMakeFiles/cmTC_9f5f8.dir/SIZE_T.c.o -MF CMakeFiles/cmTC_9f5f8.dir/SIZE_T.c.o.d -o CMakeFiles/cmTC_9f5f8.dir/SIZE_T.c.o -c /workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-lFmCIN/SIZE_T.c
+        Linking C executable cmTC_9f5f8
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9f5f8.dir/link.txt --verbose=1
+        /usr/bin/cc -fsanitize=address -fno-omit-frame-pointer -g -O1  -fsanitize=address  CMakeFiles/cmTC_9f5f8.dir/SIZE_T.c.o -o cmTC_9f5f8
+        gmake[1]: Leaving directory '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-lFmCIN'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckTypeSize.cmake:156 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckTypeSize.cmake:283 (__check_type_size_impl)"
+      - "CMakeLists.txt:491 (check_type_size)"
+    checks:
+      - "Check size of unsigned long"
+    directories:
+      source: "/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-76EQwS"
+      binary: "/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-76EQwS"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-fsanitize=address -fno-omit-frame-pointer -g -O1"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-fsanitize=address"
+    buildResult:
+      variable: "HAVE_UNSIGNED_LONG"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-76EQwS'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_1c76f/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_1c76f.dir/build.make CMakeFiles/cmTC_1c76f.dir/build
+        gmake[1]: Entering directory '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-76EQwS'
+        Building C object CMakeFiles/cmTC_1c76f.dir/UNSIGNED_LONG.c.o
+        /usr/bin/cc   -fsanitize=address -fno-omit-frame-pointer -g -O1  -MD -MT CMakeFiles/cmTC_1c76f.dir/UNSIGNED_LONG.c.o -MF CMakeFiles/cmTC_1c76f.dir/UNSIGNED_LONG.c.o.d -o CMakeFiles/cmTC_1c76f.dir/UNSIGNED_LONG.c.o -c /workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-76EQwS/UNSIGNED_LONG.c
+        Linking C executable cmTC_1c76f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1c76f.dir/link.txt --verbose=1
+        /usr/bin/cc -fsanitize=address -fno-omit-frame-pointer -g -O1  -fsanitize=address  CMakeFiles/cmTC_1c76f.dir/UNSIGNED_LONG.c.o -o cmTC_1c76f
+        gmake[1]: Leaving directory '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-76EQwS'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:494 (check_c_source_compiles)"
+    checks:
+      - "Performing Test HAVE_BUILTIN_CTZL"
+    directories:
+      source: "/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-OQDmgn"
+      binary: "/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-OQDmgn"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-fsanitize=address -fno-omit-frame-pointer -g -O1"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-fsanitize=address"
+    buildResult:
+      variable: "HAVE_BUILTIN_CTZL"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-OQDmgn'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_57a24/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_57a24.dir/build.make CMakeFiles/cmTC_57a24.dir/build
+        gmake[1]: Entering directory '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-OQDmgn'
+        Building C object CMakeFiles/cmTC_57a24.dir/src.c.o
+        /usr/bin/cc -DHAVE_BUILTIN_CTZL  -fsanitize=address -fno-omit-frame-pointer -g -O1  -MD -MT CMakeFiles/cmTC_57a24.dir/src.c.o -MF CMakeFiles/cmTC_57a24.dir/src.c.o.d -o CMakeFiles/cmTC_57a24.dir/src.c.o -c /workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-OQDmgn/src.c
+        Linking C executable cmTC_57a24
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_57a24.dir/link.txt --verbose=1
+        /usr/bin/cc -fsanitize=address -fno-omit-frame-pointer -g -O1  -fsanitize=address  CMakeFiles/cmTC_57a24.dir/src.c.o -o cmTC_57a24
+        gmake[1]: Leaving directory '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-OQDmgn'
+        
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceRuns.cmake:99 (try_run)"
+      - "/usr/share/cmake-3.31/Modules/CheckCSourceRuns.cmake:52 (cmake_check_source_runs)"
+      - "CMakeLists.txt:506 (check_c_source_runs)"
+    checks:
+      - "Performing Test RIGHT_SHIFT_IS_UNSIGNED"
+    directories:
+      source: "/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-7sSU7O"
+      binary: "/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-7sSU7O"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-fsanitize=address -fno-omit-frame-pointer -g -O1"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-fsanitize=address"
+    buildResult:
+      variable: "RIGHT_SHIFT_IS_UNSIGNED_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-7sSU7O'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_80f87/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_80f87.dir/build.make CMakeFiles/cmTC_80f87.dir/build
+        gmake[1]: Entering directory '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-7sSU7O'
+        Building C object CMakeFiles/cmTC_80f87.dir/src.c.o
+        /usr/bin/cc -DRIGHT_SHIFT_IS_UNSIGNED  -fsanitize=address -fno-omit-frame-pointer -g -O1  -MD -MT CMakeFiles/cmTC_80f87.dir/src.c.o -MF CMakeFiles/cmTC_80f87.dir/src.c.o.d -o CMakeFiles/cmTC_80f87.dir/src.c.o -c /workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-7sSU7O/src.c
+        Linking C executable cmTC_80f87
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_80f87.dir/link.txt --verbose=1
+        /usr/bin/cc -fsanitize=address -fno-omit-frame-pointer -g -O1  -fsanitize=address  CMakeFiles/cmTC_80f87.dir/src.c.o -o cmTC_80f87
+        gmake[1]: Leaving directory '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-7sSU7O'
+        
+      exitCode: 0
+    runResult:
+      variable: "RIGHT_SHIFT_IS_UNSIGNED_EXITCODE"
+      cached: true
+      stdout: |
+      stderr: |
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:529 (check_c_source_compiles)"
+    checks:
+      - "Performing Test HIDDEN_WORKS"
+    directories:
+      source: "/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-1BDhsB"
+      binary: "/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-1BDhsB"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-fsanitize=address -fno-omit-frame-pointer -g -O1"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-fsanitize=address"
+    buildResult:
+      variable: "HIDDEN_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-1BDhsB'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_166dc/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_166dc.dir/build.make CMakeFiles/cmTC_166dc.dir/build
+        gmake[1]: Entering directory '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-1BDhsB'
+        Building C object CMakeFiles/cmTC_166dc.dir/src.c.o
+        /usr/bin/cc -DHIDDEN_WORKS  -fsanitize=address -fno-omit-frame-pointer -g -O1  -MD -MT CMakeFiles/cmTC_166dc.dir/src.c.o -MF CMakeFiles/cmTC_166dc.dir/src.c.o.d -o CMakeFiles/cmTC_166dc.dir/src.c.o -c /workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-1BDhsB/src.c
+        Linking C executable cmTC_166dc
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_166dc.dir/link.txt --verbose=1
+        /usr/bin/cc -fsanitize=address -fno-omit-frame-pointer -g -O1  -fsanitize=address  CMakeFiles/cmTC_166dc.dir/src.c.o -o cmTC_166dc
+        gmake[1]: Leaving directory '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-1BDhsB'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:553 (check_c_source_compiles)"
+    checks:
+      - "Performing Test INLINE_WORKS"
+    directories:
+      source: "/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-sdG572"
+      binary: "/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-sdG572"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-fsanitize=address -fno-omit-frame-pointer -g -O1"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-fsanitize=address"
+    buildResult:
+      variable: "INLINE_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-sdG572'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e0e8f/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e0e8f.dir/build.make CMakeFiles/cmTC_e0e8f.dir/build
+        gmake[1]: Entering directory '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-sdG572'
+        Building C object CMakeFiles/cmTC_e0e8f.dir/src.c.o
+        /usr/bin/cc -DINLINE_WORKS  -fsanitize=address -fno-omit-frame-pointer -g -O1  -MD -MT CMakeFiles/cmTC_e0e8f.dir/src.c.o -MF CMakeFiles/cmTC_e0e8f.dir/src.c.o.d -o CMakeFiles/cmTC_e0e8f.dir/src.c.o -c /workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-sdG572/src.c
+        Linking C executable cmTC_e0e8f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e0e8f.dir/link.txt --verbose=1
+        /usr/bin/cc -fsanitize=address -fno-omit-frame-pointer -g -O1  -fsanitize=address  CMakeFiles/cmTC_e0e8f.dir/src.c.o -o cmTC_e0e8f
+        gmake[1]: Leaving directory '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-sdG572'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:570 (check_c_source_compiles)"
+    checks:
+      - "Performing Test HAVE_THREAD_LOCAL"
+    directories:
+      source: "/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-loK809"
+      binary: "/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-loK809"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-fsanitize=address -fno-omit-frame-pointer -g -O1"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-fsanitize=address"
+    buildResult:
+      variable: "HAVE_THREAD_LOCAL"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-loK809'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_579d1/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_579d1.dir/build.make CMakeFiles/cmTC_579d1.dir/build
+        gmake[1]: Entering directory '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-loK809'
+        Building C object CMakeFiles/cmTC_579d1.dir/src.c.o
+        /usr/bin/cc -DHAVE_THREAD_LOCAL  -fsanitize=address -fno-omit-frame-pointer -g -O1  -MD -MT CMakeFiles/cmTC_579d1.dir/src.c.o -MF CMakeFiles/cmTC_579d1.dir/src.c.o.d -o CMakeFiles/cmTC_579d1.dir/src.c.o -c /workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-loK809/src.c
+        Linking C executable cmTC_579d1
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_579d1.dir/link.txt --verbose=1
+        /usr/bin/cc -fsanitize=address -fno-omit-frame-pointer -g -O1  -fsanitize=address  CMakeFiles/cmTC_579d1.dir/src.c.o -o cmTC_579d1
+        gmake[1]: Leaving directory '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-loK809'
+        
+      exitCode: 0
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      The system is: Linux - 6.1.147 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/cc 
+      Build flags: -fsanitize=address;-fno-omit-frame-pointer;-g;-O1
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is Clang, found in:
+        /workspace/build_asan/CMakeFiles/3.31.6/CompilerIdC/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:16 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-PwQOh6"
+      binary: "/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-PwQOh6"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-fsanitize=address -fno-omit-frame-pointer -g -O1"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-fsanitize=address"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-PwQOh6'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_afe79/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_afe79.dir/build.make CMakeFiles/cmTC_afe79.dir/build
+        gmake[1]: Entering directory '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-PwQOh6'
+        Building C object CMakeFiles/cmTC_afe79.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -fsanitize=address -fno-omit-frame-pointer -g -O1    -v -MD -MT CMakeFiles/cmTC_afe79.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_afe79.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_afe79.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c
+        Ubuntu clang version 20.1.2 (0ubuntu1)
+        Target: x86_64-pc-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/lib/llvm-20/bin
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14
+        Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         (in-process)
+         "/usr/lib/llvm-20/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debug-info-kind=constructor -dwarf-version=5 -debugger-tuning=gdb -fdebug-compilation-dir=/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-PwQOh6 -v -fcoverage-compilation-dir=/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-PwQOh6 -resource-dir /usr/lib/llvm-20/lib/clang/20 -dependency-file CMakeFiles/cmTC_afe79.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_afe79.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /usr/lib/llvm-20/lib/clang/20/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/14/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -O1 -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fsanitize=address -fsanitize-system-ignorelist=/usr/lib/llvm-20/lib/clang/20/share/asan_ignorelist.txt -fno-sanitize-memory-param-retval -fsanitize-address-use-after-scope -fsanitize-address-globals-dead-stripping -fno-assume-sane-operator-new -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_afe79.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c
+        clang -cc1 version 20.1.2 based upon LLVM 20.1.2 default target x86_64-pc-linux-gnu
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/14/../../../../x86_64-linux-gnu/include"
+        ignoring nonexistent directory "/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/llvm-20/lib/clang/20/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Linking C executable cmTC_afe79
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_afe79.dir/link.txt --verbose=1
+        Ubuntu clang version 20.1.2 (0ubuntu1)
+        Target: x86_64-pc-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/lib/llvm-20/bin
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14
+        Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_afe79 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/14 -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/lib -L/usr/lib --whole-archive /usr/lib/llvm-20/lib/clang/20/lib/linux/libclang_rt.asan_static-x86_64.a --no-whole-archive --whole-archive /usr/lib/llvm-20/lib/clang/20/lib/linux/libclang_rt.asan-x86_64.a --no-whole-archive --dynamic-list=/usr/lib/llvm-20/lib/clang/20/lib/linux/libclang_rt.asan-x86_64.a.syms -v CMakeFiles/cmTC_afe79.dir/CMakeCCompilerABI.c.o --no-as-needed -lpthread -lrt -lm -ldl -lresolv -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+        GNU ld (GNU Binutils for Ubuntu) 2.44
+        /usr/bin/cc -fsanitize=address -fno-omit-frame-pointer -g -O1  -fsanitize=address -v -Wl,-v CMakeFiles/cmTC_afe79.dir/CMakeCCompilerABI.c.o -o cmTC_afe79
+        gmake[1]: Leaving directory '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-PwQOh6'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/llvm-20/lib/clang/20/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/llvm-20/lib/clang/20/include] ==> [/usr/lib/llvm-20/lib/clang/20/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/llvm-20/lib/clang/20/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-PwQOh6']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_afe79/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_afe79.dir/build.make CMakeFiles/cmTC_afe79.dir/build]
+        ignore line: [gmake[1]: Entering directory '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-PwQOh6']
+        ignore line: [Building C object CMakeFiles/cmTC_afe79.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -fsanitize=address -fno-omit-frame-pointer -g -O1    -v -MD -MT CMakeFiles/cmTC_afe79.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_afe79.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_afe79.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c]
+        ignore line: [Ubuntu clang version 20.1.2 (0ubuntu1)]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/lib/llvm-20/bin]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14]
+        ignore line: [Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [ (in-process)]
+        ignore line: [ "/usr/lib/llvm-20/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debug-info-kind=constructor -dwarf-version=5 -debugger-tuning=gdb -fdebug-compilation-dir=/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-PwQOh6 -v -fcoverage-compilation-dir=/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-PwQOh6 -resource-dir /usr/lib/llvm-20/lib/clang/20 -dependency-file CMakeFiles/cmTC_afe79.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_afe79.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /usr/lib/llvm-20/lib/clang/20/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/14/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -O1 -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fsanitize=address -fsanitize-system-ignorelist=/usr/lib/llvm-20/lib/clang/20/share/asan_ignorelist.txt -fno-sanitize-memory-param-retval -fsanitize-address-use-after-scope -fsanitize-address-globals-dead-stripping -fno-assume-sane-operator-new -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_afe79.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang -cc1 version 20.1.2 based upon LLVM 20.1.2 default target x86_64-pc-linux-gnu]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/14/../../../../x86_64-linux-gnu/include"]
+        ignore line: [ignoring nonexistent directory "/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/llvm-20/lib/clang/20/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Linking C executable cmTC_afe79]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_afe79.dir/link.txt --verbose=1]
+        ignore line: [Ubuntu clang version 20.1.2 (0ubuntu1)]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/lib/llvm-20/bin]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14]
+        ignore line: [Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        link line: [ "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_afe79 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/14 -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/lib -L/usr/lib --whole-archive /usr/lib/llvm-20/lib/clang/20/lib/linux/libclang_rt.asan_static-x86_64.a --no-whole-archive --whole-archive /usr/lib/llvm-20/lib/clang/20/lib/linux/libclang_rt.asan-x86_64.a --no-whole-archive --dynamic-list=/usr/lib/llvm-20/lib/clang/20/lib/linux/libclang_rt.asan-x86_64.a.syms -v CMakeFiles/cmTC_afe79.dir/CMakeCCompilerABI.c.o --no-as-needed -lpthread -lrt -lm -ldl -lresolv -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o /lib/x86_64-linux-gnu/crtn.o]
+          arg [/usr/bin/ld] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_afe79] ==> ignore
+          arg [/lib/x86_64-linux-gnu/Scrt1.o] ==> obj [/lib/x86_64-linux-gnu/Scrt1.o]
+          arg [/lib/x86_64-linux-gnu/crti.o] ==> obj [/lib/x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/14] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/14]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib64]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [--whole-archive] ==> ignore
+          arg [/usr/lib/llvm-20/lib/clang/20/lib/linux/libclang_rt.asan_static-x86_64.a] ==> lib [/usr/lib/llvm-20/lib/clang/20/lib/linux/libclang_rt.asan_static-x86_64.a]
+          arg [--no-whole-archive] ==> ignore
+          arg [--whole-archive] ==> ignore
+          arg [/usr/lib/llvm-20/lib/clang/20/lib/linux/libclang_rt.asan-x86_64.a] ==> lib [/usr/lib/llvm-20/lib/clang/20/lib/linux/libclang_rt.asan-x86_64.a]
+          arg [--no-whole-archive] ==> ignore
+          arg [--dynamic-list=/usr/lib/llvm-20/lib/clang/20/lib/linux/libclang_rt.asan-x86_64.a.syms] ==> ignore
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_afe79.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [--no-as-needed] ==> ignore
+          arg [-lpthread] ==> lib [pthread]
+          arg [-lrt] ==> lib [rt]
+          arg [-lm] ==> lib [m]
+          arg [-ldl] ==> lib [dl]
+          arg [-lresolv] ==> lib [resolv]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o]
+          arg [/lib/x86_64-linux-gnu/crtn.o] ==> obj [/lib/x86_64-linux-gnu/crtn.o]
+        linker tool for 'C': /usr/bin/ld
+        remove lib [/usr/lib/llvm-20/lib/clang/20/lib/linux/libclang_rt.asan_static-x86_64.a]
+        remove lib [/usr/lib/llvm-20/lib/clang/20/lib/linux/libclang_rt.asan-x86_64.a]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/14] ==> [/usr/lib/gcc/x86_64-linux-gnu/14]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [pthread;rt;m;dl;resolv;gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/lib/x86_64-linux-gnu/Scrt1.o;/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o;/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/14;/usr/lib64;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/lib;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:16 (project)"
+    message: |
+      Running the C compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils for Ubuntu) 2.44
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckTypeSize.cmake:262 (check_include_file)"
+      - "CMakeLists.txt:490 (check_type_size)"
+    checks:
+      - "Looking for sys/types.h"
+    directories:
+      source: "/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-tUWuEf"
+      binary: "/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-tUWuEf"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-fsanitize=address -fno-omit-frame-pointer -g -O1"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-fsanitize=address"
+    buildResult:
+      variable: "HAVE_SYS_TYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-tUWuEf'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f3256/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_f3256.dir/build.make CMakeFiles/cmTC_f3256.dir/build
+        gmake[1]: Entering directory '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-tUWuEf'
+        Building C object CMakeFiles/cmTC_f3256.dir/CheckIncludeFile.c.o
+        /usr/bin/cc   -fsanitize=address -fno-omit-frame-pointer -g -O1  -MD -MT CMakeFiles/cmTC_f3256.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_f3256.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_f3256.dir/CheckIncludeFile.c.o -c /workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-tUWuEf/CheckIncludeFile.c
+        Linking C executable cmTC_f3256
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f3256.dir/link.txt --verbose=1
+        /usr/bin/cc -fsanitize=address -fno-omit-frame-pointer -g -O1  -fsanitize=address  CMakeFiles/cmTC_f3256.dir/CheckIncludeFile.c.o -o cmTC_f3256
+        gmake[1]: Leaving directory '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-tUWuEf'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckTypeSize.cmake:263 (check_include_file)"
+      - "CMakeLists.txt:490 (check_type_size)"
+    checks:
+      - "Looking for stdint.h"
+    directories:
+      source: "/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-KLdtVK"
+      binary: "/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-KLdtVK"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-fsanitize=address -fno-omit-frame-pointer -g -O1"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-fsanitize=address"
+    buildResult:
+      variable: "HAVE_STDINT_H"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-KLdtVK'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_4793d/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_4793d.dir/build.make CMakeFiles/cmTC_4793d.dir/build
+        gmake[1]: Entering directory '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-KLdtVK'
+        Building C object CMakeFiles/cmTC_4793d.dir/CheckIncludeFile.c.o
+        /usr/bin/cc   -fsanitize=address -fno-omit-frame-pointer -g -O1  -MD -MT CMakeFiles/cmTC_4793d.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_4793d.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_4793d.dir/CheckIncludeFile.c.o -c /workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-KLdtVK/CheckIncludeFile.c
+        Linking C executable cmTC_4793d
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4793d.dir/link.txt --verbose=1
+        /usr/bin/cc -fsanitize=address -fno-omit-frame-pointer -g -O1  -fsanitize=address  CMakeFiles/cmTC_4793d.dir/CheckIncludeFile.c.o -o cmTC_4793d
+        gmake[1]: Leaving directory '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-KLdtVK'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckTypeSize.cmake:264 (check_include_file)"
+      - "CMakeLists.txt:490 (check_type_size)"
+    checks:
+      - "Looking for stddef.h"
+    directories:
+      source: "/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-W9QPkb"
+      binary: "/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-W9QPkb"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-fsanitize=address -fno-omit-frame-pointer -g -O1"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-fsanitize=address"
+    buildResult:
+      variable: "HAVE_STDDEF_H"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-W9QPkb'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_caf57/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_caf57.dir/build.make CMakeFiles/cmTC_caf57.dir/build
+        gmake[1]: Entering directory '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-W9QPkb'
+        Building C object CMakeFiles/cmTC_caf57.dir/CheckIncludeFile.c.o
+        /usr/bin/cc   -fsanitize=address -fno-omit-frame-pointer -g -O1  -MD -MT CMakeFiles/cmTC_caf57.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_caf57.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_caf57.dir/CheckIncludeFile.c.o -c /workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-W9QPkb/CheckIncludeFile.c
+        Linking C executable cmTC_caf57
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_caf57.dir/link.txt --verbose=1
+        /usr/bin/cc -fsanitize=address -fno-omit-frame-pointer -g -O1  -fsanitize=address  CMakeFiles/cmTC_caf57.dir/CheckIncludeFile.c.o -o cmTC_caf57
+        gmake[1]: Leaving directory '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-W9QPkb'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckTypeSize.cmake:156 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckTypeSize.cmake:283 (__check_type_size_impl)"
+      - "CMakeLists.txt:490 (check_type_size)"
+    checks:
+      - "Check size of size_t"
+    directories:
+      source: "/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-lQxWLW"
+      binary: "/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-lQxWLW"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-fsanitize=address -fno-omit-frame-pointer -g -O1"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-fsanitize=address"
+    buildResult:
+      variable: "HAVE_SIZE_T"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-lQxWLW'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ed1da/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ed1da.dir/build.make CMakeFiles/cmTC_ed1da.dir/build
+        gmake[1]: Entering directory '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-lQxWLW'
+        Building C object CMakeFiles/cmTC_ed1da.dir/SIZE_T.c.o
+        /usr/bin/cc   -fsanitize=address -fno-omit-frame-pointer -g -O1  -MD -MT CMakeFiles/cmTC_ed1da.dir/SIZE_T.c.o -MF CMakeFiles/cmTC_ed1da.dir/SIZE_T.c.o.d -o CMakeFiles/cmTC_ed1da.dir/SIZE_T.c.o -c /workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-lQxWLW/SIZE_T.c
+        Linking C executable cmTC_ed1da
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ed1da.dir/link.txt --verbose=1
+        /usr/bin/cc -fsanitize=address -fno-omit-frame-pointer -g -O1  -fsanitize=address  CMakeFiles/cmTC_ed1da.dir/SIZE_T.c.o -o cmTC_ed1da
+        gmake[1]: Leaving directory '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-lQxWLW'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckTypeSize.cmake:156 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckTypeSize.cmake:283 (__check_type_size_impl)"
+      - "CMakeLists.txt:491 (check_type_size)"
+    checks:
+      - "Check size of unsigned long"
+    directories:
+      source: "/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-JbrIL2"
+      binary: "/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-JbrIL2"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-fsanitize=address -fno-omit-frame-pointer -g -O1"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-fsanitize=address"
+    buildResult:
+      variable: "HAVE_UNSIGNED_LONG"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-JbrIL2'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ce11a/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ce11a.dir/build.make CMakeFiles/cmTC_ce11a.dir/build
+        gmake[1]: Entering directory '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-JbrIL2'
+        Building C object CMakeFiles/cmTC_ce11a.dir/UNSIGNED_LONG.c.o
+        /usr/bin/cc   -fsanitize=address -fno-omit-frame-pointer -g -O1  -MD -MT CMakeFiles/cmTC_ce11a.dir/UNSIGNED_LONG.c.o -MF CMakeFiles/cmTC_ce11a.dir/UNSIGNED_LONG.c.o.d -o CMakeFiles/cmTC_ce11a.dir/UNSIGNED_LONG.c.o -c /workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-JbrIL2/UNSIGNED_LONG.c
+        Linking C executable cmTC_ce11a
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ce11a.dir/link.txt --verbose=1
+        /usr/bin/cc -fsanitize=address -fno-omit-frame-pointer -g -O1  -fsanitize=address  CMakeFiles/cmTC_ce11a.dir/UNSIGNED_LONG.c.o -o cmTC_ce11a
+        gmake[1]: Leaving directory '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-JbrIL2'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:494 (check_c_source_compiles)"
+    checks:
+      - "Performing Test HAVE_BUILTIN_CTZL"
+    directories:
+      source: "/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-18fxpC"
+      binary: "/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-18fxpC"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-fsanitize=address -fno-omit-frame-pointer -g -O1"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-fsanitize=address"
+    buildResult:
+      variable: "HAVE_BUILTIN_CTZL"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-18fxpC'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9223c/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_9223c.dir/build.make CMakeFiles/cmTC_9223c.dir/build
+        gmake[1]: Entering directory '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-18fxpC'
+        Building C object CMakeFiles/cmTC_9223c.dir/src.c.o
+        /usr/bin/cc -DHAVE_BUILTIN_CTZL  -fsanitize=address -fno-omit-frame-pointer -g -O1  -MD -MT CMakeFiles/cmTC_9223c.dir/src.c.o -MF CMakeFiles/cmTC_9223c.dir/src.c.o.d -o CMakeFiles/cmTC_9223c.dir/src.c.o -c /workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-18fxpC/src.c
+        Linking C executable cmTC_9223c
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9223c.dir/link.txt --verbose=1
+        /usr/bin/cc -fsanitize=address -fno-omit-frame-pointer -g -O1  -fsanitize=address  CMakeFiles/cmTC_9223c.dir/src.c.o -o cmTC_9223c
+        gmake[1]: Leaving directory '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-18fxpC'
+        
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceRuns.cmake:99 (try_run)"
+      - "/usr/share/cmake-3.31/Modules/CheckCSourceRuns.cmake:52 (cmake_check_source_runs)"
+      - "CMakeLists.txt:506 (check_c_source_runs)"
+    checks:
+      - "Performing Test RIGHT_SHIFT_IS_UNSIGNED"
+    directories:
+      source: "/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-Gwna8W"
+      binary: "/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-Gwna8W"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-fsanitize=address -fno-omit-frame-pointer -g -O1"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-fsanitize=address"
+    buildResult:
+      variable: "RIGHT_SHIFT_IS_UNSIGNED_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-Gwna8W'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b8239/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b8239.dir/build.make CMakeFiles/cmTC_b8239.dir/build
+        gmake[1]: Entering directory '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-Gwna8W'
+        Building C object CMakeFiles/cmTC_b8239.dir/src.c.o
+        /usr/bin/cc -DRIGHT_SHIFT_IS_UNSIGNED  -fsanitize=address -fno-omit-frame-pointer -g -O1  -MD -MT CMakeFiles/cmTC_b8239.dir/src.c.o -MF CMakeFiles/cmTC_b8239.dir/src.c.o.d -o CMakeFiles/cmTC_b8239.dir/src.c.o -c /workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-Gwna8W/src.c
+        Linking C executable cmTC_b8239
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b8239.dir/link.txt --verbose=1
+        /usr/bin/cc -fsanitize=address -fno-omit-frame-pointer -g -O1  -fsanitize=address  CMakeFiles/cmTC_b8239.dir/src.c.o -o cmTC_b8239
+        gmake[1]: Leaving directory '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-Gwna8W'
+        
+      exitCode: 0
+    runResult:
+      variable: "RIGHT_SHIFT_IS_UNSIGNED_EXITCODE"
+      cached: true
+      stdout: |
+      stderr: |
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:529 (check_c_source_compiles)"
+    checks:
+      - "Performing Test HIDDEN_WORKS"
+    directories:
+      source: "/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-lE35hU"
+      binary: "/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-lE35hU"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-fsanitize=address -fno-omit-frame-pointer -g -O1"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-fsanitize=address"
+    buildResult:
+      variable: "HIDDEN_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-lE35hU'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c48fc/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c48fc.dir/build.make CMakeFiles/cmTC_c48fc.dir/build
+        gmake[1]: Entering directory '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-lE35hU'
+        Building C object CMakeFiles/cmTC_c48fc.dir/src.c.o
+        /usr/bin/cc -DHIDDEN_WORKS  -fsanitize=address -fno-omit-frame-pointer -g -O1  -MD -MT CMakeFiles/cmTC_c48fc.dir/src.c.o -MF CMakeFiles/cmTC_c48fc.dir/src.c.o.d -o CMakeFiles/cmTC_c48fc.dir/src.c.o -c /workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-lE35hU/src.c
+        Linking C executable cmTC_c48fc
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c48fc.dir/link.txt --verbose=1
+        /usr/bin/cc -fsanitize=address -fno-omit-frame-pointer -g -O1  -fsanitize=address  CMakeFiles/cmTC_c48fc.dir/src.c.o -o cmTC_c48fc
+        gmake[1]: Leaving directory '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-lE35hU'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:553 (check_c_source_compiles)"
+    checks:
+      - "Performing Test INLINE_WORKS"
+    directories:
+      source: "/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-7GMmpu"
+      binary: "/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-7GMmpu"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-fsanitize=address -fno-omit-frame-pointer -g -O1"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-fsanitize=address"
+    buildResult:
+      variable: "INLINE_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-7GMmpu'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_142eb/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_142eb.dir/build.make CMakeFiles/cmTC_142eb.dir/build
+        gmake[1]: Entering directory '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-7GMmpu'
+        Building C object CMakeFiles/cmTC_142eb.dir/src.c.o
+        /usr/bin/cc -DINLINE_WORKS  -fsanitize=address -fno-omit-frame-pointer -g -O1  -MD -MT CMakeFiles/cmTC_142eb.dir/src.c.o -MF CMakeFiles/cmTC_142eb.dir/src.c.o.d -o CMakeFiles/cmTC_142eb.dir/src.c.o -c /workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-7GMmpu/src.c
+        Linking C executable cmTC_142eb
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_142eb.dir/link.txt --verbose=1
+        /usr/bin/cc -fsanitize=address -fno-omit-frame-pointer -g -O1  -fsanitize=address  CMakeFiles/cmTC_142eb.dir/src.c.o -o cmTC_142eb
+        gmake[1]: Leaving directory '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-7GMmpu'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:570 (check_c_source_compiles)"
+    checks:
+      - "Performing Test HAVE_THREAD_LOCAL"
+    directories:
+      source: "/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-Vzz1En"
+      binary: "/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-Vzz1En"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-fsanitize=address -fno-omit-frame-pointer -g -O1"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-fsanitize=address"
+    buildResult:
+      variable: "HAVE_THREAD_LOCAL"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-Vzz1En'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_de7f1/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_de7f1.dir/build.make CMakeFiles/cmTC_de7f1.dir/build
+        gmake[1]: Entering directory '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-Vzz1En'
+        Building C object CMakeFiles/cmTC_de7f1.dir/src.c.o
+        /usr/bin/cc -DHAVE_THREAD_LOCAL  -fsanitize=address -fno-omit-frame-pointer -g -O1  -MD -MT CMakeFiles/cmTC_de7f1.dir/src.c.o -MF CMakeFiles/cmTC_de7f1.dir/src.c.o.d -o CMakeFiles/cmTC_de7f1.dir/src.c.o -c /workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-Vzz1En/src.c
+        Linking C executable cmTC_de7f1
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_de7f1.dir/link.txt --verbose=1
+        /usr/bin/cc -fsanitize=address -fno-omit-frame-pointer -g -O1  -fsanitize=address  CMakeFiles/cmTC_de7f1.dir/src.c.o -o cmTC_de7f1
+        gmake[1]: Leaving directory '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-Vzz1En'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "CMakeLists.txt:583 (check_c_source_compiles)"
+    checks:
+      - "Performing Test HAVE_VERSION_SCRIPT"
+    directories:
+      source: "/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-5IVbDb"
+      binary: "/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-5IVbDb"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "-fsanitize=address -fno-omit-frame-pointer -g -O1"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: "-fsanitize=address"
+    buildResult:
+      variable: "HAVE_VERSION_SCRIPT"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-5IVbDb'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_65229/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_65229.dir/build.make CMakeFiles/cmTC_65229.dir/build
+        gmake[1]: Entering directory '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-5IVbDb'
+        Building C object CMakeFiles/cmTC_65229.dir/src.c.o
+        /usr/bin/cc -DHAVE_VERSION_SCRIPT  -fsanitize=address -fno-omit-frame-pointer -g -O1 -Wl,--version-script,/workspace/build_asan/conftest.map -MD -MT CMakeFiles/cmTC_65229.dir/src.c.o -MF CMakeFiles/cmTC_65229.dir/src.c.o.d -o CMakeFiles/cmTC_65229.dir/src.c.o -c /workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-5IVbDb/src.c
+        cc: warning: -Wl,--version-script,/workspace/build_asan/conftest.map: 'linker' input unused [-Wunused-command-line-argument]
+        Linking C executable cmTC_65229
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_65229.dir/link.txt --verbose=1
+        /usr/bin/cc -fsanitize=address -fno-omit-frame-pointer -g -O1 -Wl,--version-script,/workspace/build_asan/conftest.map -fsanitize=address  CMakeFiles/cmTC_65229.dir/src.c.o -o cmTC_65229
+        gmake[1]: Leaving directory '/workspace/build_asan/CMakeFiles/CMakeScratch/TryCompile-5IVbDb'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckLanguage.cmake:140 (message)"
+      - "simd/CMakeLists.txt:46 (check_language)"
+    checks:
+      - "Looking for a ASM_NASM compiler"
+    message: |
+      Looking for a ASM_NASM compiler failed with the following output:
+      -- The ASM_NASM compiler identification is unknown
+      -- Didn't find assembler
+      CMake Error at CMakeLists.txt:3 (project):
+        No CMAKE_ASM_NASM_COMPILER could be found.
+      
+        Tell CMake where to find the compiler by setting either the environment
+        variable "ASM_NASM" or the CMake cache entry CMAKE_ASM_NASM_COMPILER to the
+        full path to the compiler, or to the compiler name if it is in the PATH.
+      
+      
+      -- Configuring incomplete, errors occurred!
+      
+...
