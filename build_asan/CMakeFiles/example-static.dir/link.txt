@@ -1,0 +1,1 @@
+/usr/bin/cc -fsanitize=address -fno-omit-frame-pointer -g -O1 -g -fsanitize=address -Xlinker --dependency-file=CMakeFiles/example-static.dir/link.d "CMakeFiles/example-static.dir/src/example.c.o" -o example-static  libjpeg.a

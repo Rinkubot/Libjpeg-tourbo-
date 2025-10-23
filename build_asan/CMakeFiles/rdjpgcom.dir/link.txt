@@ -1,0 +1,1 @@
+/usr/bin/cc -fsanitize=address -fno-omit-frame-pointer -g -O1 -g -fsanitize=address -Xlinker --dependency-file=CMakeFiles/rdjpgcom.dir/link.d CMakeFiles/rdjpgcom.dir/src/rdjpgcom.c.o -o rdjpgcom  -Wl,-rpath,::::::::::::::::::::::::

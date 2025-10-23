@@ -1,0 +1,1 @@
+/usr/bin/cc -fsanitize=address -fno-omit-frame-pointer -g -O1 -g -fsanitize=address -Xlinker --dependency-file=CMakeFiles/tjcomp.dir/link.d CMakeFiles/tjcomp.dir/src/tjcomp.c.o -o tjcomp  -Wl,-rpath,/workspace/build_asan libturbojpeg.so.0.4.0
